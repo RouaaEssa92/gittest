@@ -26,6 +26,10 @@
 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css"> 
+
+
+
+
         <title>Ristorante Con Fusion</title>
 
     </head>
@@ -46,9 +50,9 @@
 
                 </ul>
 
-                <span class="navbar-text">
+                <span class="navbar-text" >
                     
-                    <a data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <a id="loginbutton">
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
                </div>
@@ -147,7 +151,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Login </h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" >&times;</button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -194,9 +198,10 @@
                             <!--img-fluid adaptive to screen size-->
                             <img src="img/logo.png" class="img-fluid">
                         </div>
-                        <div class="col-12 col-sm-2 align-self-center">
+                        <div class="col-12 col-sm-2 align-self-center" >
                             <a role="button" class="btn btn-block nav-link btn-warning"
-                             data-html="true"  data-bs-toggle="modal" data-bs-target="#HWModal">Reserve Table</a>
+                             data-html="true" id ="reservebutton" >Reserve Table</a>
+                             <!--data-bs-toggle="modal" data-bs-target="#HWModal"-->
                                
                         </div>
                     </div>
@@ -392,46 +397,12 @@
                 </div>
             </footer>
         
-        </body>
-        
-        </html>
+
         <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<!--<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>
-    
--->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>       
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-       
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.min.js" integrity="sha512-/HL24m2nmyI2+ccX+dSHphAHqLw60Oj5sK8jf59VWtFWZi9vx7jzoxbZmcBeeTeCUc7z1mTs3LfyXGuBU32t+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.js" integrity="sha512-Bp1SEH6unclxWdEeJvGQdSKlFarPwBjDVg5uwApgKLdrae0h+NKTcox+MqagH0Xl9dC1jgWdg66wFP4JXumrlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modal.min.js" integrity="sha512-0wCoO9w07Mu4MnC918HEsFyXhVJVoxeq+RD4XXYukmLswUHMCRbBomZE+NjxBtv88QTU/fImTY+PclhlMpJ4JA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.js" integrity="sha512-1WwRJ0g63FREHWoeqiotPVHlC/OeStljQ3dBKHeahzzEZ+PDGn8QxWRv4MMcRZfPBYdNQCMnX2HtOCkLg4A0PA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/5.1.0/bootstrap-slider.min.js" integrity="sha512-zSviPKYfEcSXo+C1AGyD1kcXR0S3kICcPjYAJKIpMHjJ2XjsfCa5VdMbePWq3DLXUGO1UjbdvVVqK6K6JPeQUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<!-- script for 2 buttons
-<script>
-    $(document).ready(function(){
-        $("#mycarousel").carousel( { interval: 2000 } );
-        $("#carousel-pause").click(function(){
-            $("#mycarousel").carousel('pause');
-        });
-        $("#carousel-play").click(function(){
-            $("#mycarousel").carousel('cycle');
-        });
-    });
-</script> 
--->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <script>
 
                 $("#carouselButton").click(function(){
@@ -446,6 +417,21 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+</script>
+<script>
+        $(document).ready(function(){
+            $("#loginbutton").click(function(){
+                $("#loginModal").modal('toggle');
+             });
+        });
 </script>  
+<script>
+    $(document).ready(function(){
+        $("#reservebutton").click(function(){
+    $("#HWModal").modal('toggle');
+  });
+});
+</script>
+
 </body>
 </html>
